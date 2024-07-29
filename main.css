@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
 
-*,
-::after,
-::before{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,97 +18,145 @@
 --Brown-800: hsl(14, 45%, 36%);
 --Rose-800: hsl(332, 51%, 32%);
 --Rose--50: hsl(330, 100%, 98%);
---headingFont-:'Young Serif',sans-serif;
+--MnHdFnt-:'Young Serif',sans-serif;
+--cntFnt:'Outfit',serif;
 }
 
- .page{
-  display: grid;
-  background: var(--Stone-100);
- }
 
+
+
+ main{
+  background-color: var(--Stone-100);
+  width: 100%;
+  z-index: -100;
+  padding: 7rem 0;
+ }
  .wrapper{
-  width: 51.5%;
-  background: var(--white-);
-  border-radius: 14px;
-  margin: 8rem auto;
+  width: 675px;
+  background-color: var(--white-);
+  margin:auto;
+  padding: 2.2rem;
+  border-radius: 24px;
+  font-family: var(--cntFnt);
+  color: var(--Stone-600);
  }
 
- 
- .content{
-   margin:3rem auto;
-   width: 90%;
-   line-height: 1.6;
-   font-family: 'Outfit',sans-serif;
-   color: var(--Stone-600);
-  }
-  .heading, 
-  h1{
-   margin: 1.2rem 0; 
-   color: var(--Stone-900);
-   font-size: 2.8rem;
-   font-weight: 500;
-   font-family: 'Young Serif' ,serif;
-  }
- .content img{
+ .img img{
   width: 100%;
   border-radius: 14px;
-  color: var(--Stone-100);
+ /*  margin-bottom: 1rem;  */
  }
 
- .content p{
+ .main-heading h1{
+  color: var(--Stone-900);
+  font-family: 'Young Serif',serif;
+  font-size: 2.2rem;
   font-weight: 500;
-  font-size: 1.1rem;
  }
 
- .prepartion-time{
-  background: var(--Rose--50);
-  margin-block: 1.7rem;
-  padding: 2.5rem;
-  font-size: 1.1rem;
-  border-radius: 1rem;
+ .main-heading p{
+  font-family: var(--cntFnt);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--Stone-600);
  }
- 
- .prepartion-time h3{
+
+ .preparation{
+  background-color: var(--Rose--50);
+  padding: 1.4rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+ }
+
+ .preparation h3{
   color: var(--Rose-800);
-  margin-bottom: 0.7rem;
- }
-
- .prepartion-time ul{
-  padding-left: 1rem;
-  line-height: 2;
- }
-
- .prepartion-time ul li{
-  padding-inline: 1.4rem;
- }
-
- .prepartion-time ul li::marker{
-  color: var(--Rose-800);
-  font-size: 0.8rem;
- }
-
- .prepartion-time ul span{
-  font-weight: 700;
- }
-
- .ingredients h2{
-  font-size: 2rem;
-  font-family:var(--headingFont-);
-  color: var(--Brown-800);
   margin-bottom: 1rem;
-  font-weight: 530;
  }
 
- .ingredients ul{
-  font-size: 1.1rem;
-  line-height: 2;
-  padding-left: 1rem;
+ .preparation ul{
+  margin-left: 1.3rem;
  }
 
- .ingredients ul li{
-  padding-left: 1rem;
- }
- .ingredients ul li::marker{
+ .preparation ul li::marker{
   color: var(--Rose-800);
-  font-size: 0.8rem;
  }
+
+ /* Default Styles according to Design */
+
+ li::marker{
+  font-size: 0.6rem;
+  color: var(--Rose-800);
+}
+li{
+  margin-bottom: 0.8rem;
+  padding-left: 1rem;
+  line-height: 1.3;
+}
+li span{
+  color: var(--Stone-800);
+  font-weight: 700;
+}
+
+h2{
+  color: var(--Brown-800);
+  margin: 1.3rem 0;
+  font-family: 'Oufit',serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+/* hr{
+  border: 0.5px solid var(--Stone-100);
+  margin: 2rem 0;
+} */
+
+/* End of Default Styles */
+
+.Ingredients{
+  border-bottom: 1px solid var(--Stone-100);
+  padding: 1rem 0;
+}
+
+.Instructions{
+  border-bottom: 1px solid var(--Stone-100);
+  padding: 1rem 0;
+}
+
+.Instructions ul li{
+  list-style-type: decimal;
+}
+
+.Instructions ul li::marker{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Nutrition p{
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 2;
+}
+
+table tr td{
+  border-bottom: 1px solid var(--Stone-100);
+  padding: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
