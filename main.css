@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+*,
+::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+--white-: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose--50: hsl(330, 100%, 98%);
+--headingFont-:'Young Serif',sans-serif;
+}
+
+ .page{
+  display: grid;
+  background: var(--Stone-100);
+ }
+
+ .wrapper{
+  width: 51.5%;
+  background: var(--white-);
+  border-radius: 14px;
+  margin: 8rem auto;
+ }
+
+ 
+ .content{
+   margin:3rem auto;
+   width: 90%;
+   line-height: 1.6;
+   font-family: 'Outfit',sans-serif;
+   color: var(--Stone-600);
+  }
+  .heading, 
+  h1{
+   margin: 1.2rem 0; 
+   color: var(--Stone-900);
+   font-size: 2.8rem;
+   font-weight: 500;
+   font-family: 'Young Serif' ,serif;
+  }
+ .content img{
+  width: 100%;
+  border-radius: 14px;
+  color: var(--Stone-100);
+ }
+
+ .content p{
+  font-weight: 500;
+  font-size: 1.1rem;
+ }
+
+ .prepartion-time{
+  background: var(--Rose--50);
+  margin-block: 1.7rem;
+  padding: 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 1rem;
+ }
+ 
+ .prepartion-time h3{
+  color: var(--Rose-800);
+  margin-bottom: 0.7rem;
+ }
+
+ .prepartion-time ul{
+  padding-left: 1rem;
+  line-height: 2;
+ }
+
+ .prepartion-time ul li{
+  padding-inline: 1.4rem;
+ }
+
+ .prepartion-time ul li::marker{
+  color: var(--Rose-800);
+  font-size: 0.8rem;
+ }
+
+ .prepartion-time ul span{
+  font-weight: 700;
+ }
+
+ .ingredients h2{
+  font-size: 2rem;
+  font-family:var(--headingFont-);
+  color: var(--Brown-800);
+  margin-bottom: 1rem;
+  font-weight: 530;
+ }
+
+ .ingredients ul{
+  font-size: 1.1rem;
+  line-height: 2;
+  padding-left: 1rem;
+ }
+
+ .ingredients ul li{
+  padding-left: 1rem;
+ }
+ .ingredients ul li::marker{
+  color: var(--Rose-800);
+  font-size: 0.8rem;
+ }
