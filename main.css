@@ -148,6 +148,28 @@ table tr td{
 }
 
 
+.attribution{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.attribution a{
+  color: var(--Brown-800);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition:all .3s;
+}
+
+.attribution a:hover,
+.attribution a:focus{
+  color: var(--Rose-800);
+}
+
+
+
 
 
 
